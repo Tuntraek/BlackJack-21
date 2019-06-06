@@ -2,7 +2,8 @@
 #include <stdlib.h>
 #include <windows.h>
 #include <locale.h>
-
+/*Feito por:
+Guilherme Maiuri*/
 
 int pontos_P1;
 int pontos_P2;
@@ -51,7 +52,7 @@ int regras(){
     printf("\n\n"
            "BlackJack: \n"
            "Jogo para dois jogadores onde o jogador tira duas cartas e soma os seus pontos, \n"
-           "o objetivo é chegar a 21 pontos ou o mais proximo disso, se passar de 21 o jogador perde! \n"
+           "o objetivo Ã© chegar a 21 pontos ou o mais proximo disso, se passar de 21 o jogador perde! \n"
            "Valor das cartas: A=1 ; 2=2 ; 3=3 ; 4=4 ; 5=5 ; 6=6 ; 7=7 ; 8=8 ; 9=9 ; 10=10 ; J=10 ; Q=10 e K=10 \n"
            "\n\n"
            "Pressione qualquer tecla para voltar ao menu!"
@@ -184,9 +185,9 @@ char imprimirCarta(int valorCarta, int carta){
                 proximaCarta = 10;
                 carta_tres = 75;
             }
-            printf("Você tirou um: %c", carta_tres);
+            printf("VocÃª tirou um: %c", carta_tres);
         }else{
-            printf("Você tirou um: %d", carta_tres);
+            printf("VocÃª tirou um: %d", carta_tres);
         }
     }
 
@@ -342,11 +343,11 @@ int vencedor(){
 
 int jogar_denovo(){
     printf("\n");
-    printf("Deseja jogar de novo? \n1 = sim \n2 = não \n3 = regras \n");
+    printf("Deseja jogar de novo? \n1 = sim \n2 = nÃ£o \n3 = regras \n");
     scanf("%d", &jogar);
 
     if(jogar>3 || jogar<=0){
-        printf("\nOpção inválida! Tente novamente.");
+        printf("\nOpÃ§Ã£o invÃ¡lida! Tente novamente.");
         jogar_denovo();
     }else {
         if(jogar == 1){
