@@ -5,7 +5,7 @@
 /*Feito por:
 Guilherme Maiuri
 Ian Heski
-Christian*/
+Christian Todesquine*/
 
 int pontos_P1;
 int pontos_P2;
